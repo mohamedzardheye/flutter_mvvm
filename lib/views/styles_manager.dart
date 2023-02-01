@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, camel_case_extensions, prefer_interpolation_to_compose_strings
+
 import 'package:flutter/material.dart';
 import 'font_manager.dart';
 

@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, camel_case_extensions, prefer_interpolation_to_compose_strings
+
 class appMargin{
   static const double m8 = 8.0;
   static const double m12 = 12.0;
@@ -21,14 +23,15 @@ class appPadding{
 
 
 class appSize{
-  static const double m8 = 8.0;
-  static const double m12 = 12.0;
-  static const double m14 = 14.0;
-  static const double m16 = 16.0;
-  static const double m18 = 18.0;
-  static const double m20 = 20.0;
-  static const double m28 = 28.0;
-  static const double m60 = 60.0;
-  static const double m65 = 65.0;
+  static const double s4 = 4.0;
+  static const double s8 = 8.0;
+  static const double s2 = 12.0;
+  static const double s14 = 14.0;
+  static const double s16 = 16.0;
+  static const double s18 = 18.0;
+  static const double s20 = 20.0;
+  static const double s28 = 28.0;
+  static const double s60 = 60.0;
+  static const double s65 = 65.0;
 
 }

@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: camel_case_types, camel_case_extensions, prefer_interpolation_to_compose_strings
 
+import 'package:flutter/material.dart';
 
 
 class colorManager{
@@ -8,6 +9,8 @@ class colorManager{
   static Color grey = hexColor.fromHex("#737477");
   static Color lightGrey = hexColor.fromHex("#9E9E9E");
   static Color primaryOpacity70 = hexColor.fromHex("#B3ED9728");
+
+  static Color white = hexColor.fromHex("#FFF");
 
 
 }
