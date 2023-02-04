@@ -6,9 +6,9 @@ class MyApp extends StatefulWidget {
 
   @override
   State<MyApp> createState() => _MyAppState(); // defaul const
-  MyApp._internal(); // private named const
+  const MyApp._internal(); // private named const
 
-  static final MyApp instance = MyApp._internal(); // single instance -- singleton
+  static const MyApp instance = MyApp._internal(); // single instance -- singleton
 
 
   factory MyApp() => instance;
