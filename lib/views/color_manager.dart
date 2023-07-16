@@ -9,6 +9,8 @@ class colorManager {
   static Color lightGrey = hexColor.fromHex("#9E9E9E");
   static Color primaryOpacity70 = hexColor.fromHex("#B3ED9728");
   static Color white = hexColor.fromHex("#FFF");
+  static Color error = hexColor.fromHex("#FF00000");
+
 }
 
 extension hexColor on Color {

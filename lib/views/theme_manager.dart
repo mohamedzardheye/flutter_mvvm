@@ -1,8 +1,8 @@
 // ignore_for_file: deprecated_member_use, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_mvvm/views/font_manager.dart';
-import 'package:flutter_mvvm/views/styles_manager.dart';
+import 'font_manager.dart';
+import 'styles_manager.dart';
 import 'values_manager.dart';
 import 'color_manager.dart';
 
@@ -47,7 +47,62 @@ ThemeData getApplicationTheme() {
     ),
 
     // Text theme
+    textTheme: TextTheme(
+      headline1: getSemiBoldStyle(color: colorManager.darkGrey,fontSize:FontSize.s16),
+      subtitle1:  getMediumStyle(color: colorManager.lightGrey,fontSize:FontSize.s14),
+      caption: getRegularStyle(color: colorManager.grey),
+      bodyText1: getRegularStyle(color: colorManager.grey)
+    ),
+
+
+
 
     // input decoration theme (text form field)
+
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: EdgeInsets.all(appPadding.p8),
+
+      //hintStyle
+      hintStyle: getRegularStyle(color: colorManager.grey),
+
+      //label style
+      labelStyle: getRegularStyle(color:colorManager.darkGrey ),
+
+
+      // error style
+      errorStyle: getRegularStyle(color: colorManager.error),
+
+
+      //enabled border
+
+      enabledBorder: OutlineInputBorder(
+        borderSide:BorderSide(color: colorManager.grey, width: appSize.s1_5) ,
+        borderRadius:BorderRadius.all(Radius.circular(appSize.s8))),
+      
+
+
+    //Focused border
+
+     focusedBorder: OutlineInputBorder(
+        borderSide:BorderSide(color: colorManager.primary, width: appSize.s1_5) ,
+        borderRadius:BorderRadius.all(Radius.circular(appSize.s8)),
+      ),
+
+    // error border
+    errorBorder: OutlineInputBorder(
+      borderSide:BorderSide(color: colorManager.error, width: appSize.s1_5) ,
+        borderRadius:BorderRadius.all(Radius.circular(appSize.s8)),
+      ),
+
+
+  // focused error border
+    focusedErrorBorder: OutlineInputBorder(
+      borderSide:BorderSide(color: colorManager.error, width: appSize.s1_5) ,
+        borderRadius:BorderRadius.all(Radius.circular(appSize.s8)),
+      ),
+
+
+
+    )
   );
 }
