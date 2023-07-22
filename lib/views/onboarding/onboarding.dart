@@ -13,7 +13,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colorManager.darkGrey,
+      backgroundColor: colorManager.white,
       body:const Center(
         child: Text("WELCOME ON BOARDING SCREENG")),
     );
