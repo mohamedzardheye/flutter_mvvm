@@ -13,4 +13,7 @@ class AppStrings{
   static const String onBoardingSubTitle4 = "sahal transport v2 welcome to sahal";
 
 
+  
+  static const String skip = "Skip";
+
 }
