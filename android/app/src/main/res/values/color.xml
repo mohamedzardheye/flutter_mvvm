@@ -3,4 +3,6 @@
 
 <resources>
     <color name="primary">#ED9728</color>
+       <color name="color_app_button">#353785</color>
+
 </resources>

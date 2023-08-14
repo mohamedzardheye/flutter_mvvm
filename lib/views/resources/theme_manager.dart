@@ -1,5 +1,4 @@
 // ignore_for_file: deprecated_member_use, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'font_manager.dart';
 import 'styles_manager.dart';
@@ -50,6 +49,7 @@ ThemeData getApplicationTheme() {
     textTheme: TextTheme(
       headline1: getSemiBoldStyle(color: colorManager.darkGrey,fontSize:FontSize.s16),
       subtitle1:  getMediumStyle(color: colorManager.lightGrey,fontSize:FontSize.s14),
+      subtitle2:  getMediumStyle(color: colorManager.primary,fontSize:FontSize.s14),
       caption: getRegularStyle(color: colorManager.grey),
       bodyText1: getRegularStyle(color: colorManager.grey)
     ),
@@ -58,7 +58,6 @@ ThemeData getApplicationTheme() {
 
 
     // input decoration theme (text form field)
-
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: EdgeInsets.all(appPadding.p8),
 
@@ -74,7 +73,6 @@ ThemeData getApplicationTheme() {
 
 
       //enabled border
-
       enabledBorder: OutlineInputBorder(
         borderSide:BorderSide(color: colorManager.grey, width: appSize.s1_5) ,
         borderRadius:BorderRadius.all(Radius.circular(appSize.s8))),
@@ -82,7 +80,6 @@ ThemeData getApplicationTheme() {
 
 
     //Focused border
-
      focusedBorder: OutlineInputBorder(
         borderSide:BorderSide(color: colorManager.primary, width: appSize.s1_5) ,
         borderRadius:BorderRadius.all(Radius.circular(appSize.s8)),
